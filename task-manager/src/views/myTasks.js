@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Header from '/.';
+import Header from 'task-manager/src/components/header.js';
 import TaskForm from 'task-manager/src/components/taskForm.js';
 import TaskList from 'task-manager/src/components/taskList.js';
-import Footer from './Footer';
+import Footer from 'task-manager/src/components/footer.js';
 
 const App = () => {
     const [tasks, setTasks] = useState([]);
