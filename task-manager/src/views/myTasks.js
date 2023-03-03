@@ -4,9 +4,13 @@ import Header from 'task-manager/src/components/header.js';
 import TaskForm from 'task-manager/src/components/taskForm.js';
 import TaskList from 'task-manager/src/components/taskList.js';
 import Footer from 'task-manager/src/components/footer.js';
+import Login from "./login";
 
 const App = () => {
     const [tasks, setTasks] = useState([]);
+    const [token, setToken] = useState('');
+    const history = useHistory();
+
 
     useEffect(() => {
         fetch('/api/tasks')
